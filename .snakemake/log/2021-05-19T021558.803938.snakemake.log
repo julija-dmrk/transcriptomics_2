@@ -1,0 +1,463 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	fastqc
+	16	fastqc_trimmed
+	1	multiqc
+	1	multiqc_trimmed
+	8	trimm
+	39
+Select jobs to execute...
+
+[Wed May 19 02:15:59 2021]
+rule trimm:
+    input: data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001.fastq, data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001.fastq
+    output: trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001.fastq, trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001.fastq
+    jobid: 38
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001
+
+
+[Wed May 19 02:15:59 2021]
+rule trimm:
+    input: data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001.fastq, data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001.fastq
+    output: trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001.fastq, trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001.fastq
+    jobid: 41
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001
+
+[Wed May 19 02:16:05 2021]
+Finished job 38.
+1 of 39 steps (3%) done
+[Wed May 19 02:16:05 2021]
+Finished job 41.
+2 of 39 steps (5%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:05 2021]
+rule trimm:
+    input: data/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001.fastq, data/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001.fastq
+    output: trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001.fastq, trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001.fastq
+    jobid: 29
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001
+
+
+[Wed May 19 02:16:05 2021]
+rule trimm:
+    input: data/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001.fastq, data/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001.fastq
+    output: trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001.fastq, trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001.fastq
+    jobid: 32
+    wildcards: sample=KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001
+
+Select jobs to execute...
+[Wed May 19 02:16:09 2021]
+Finished job 32.
+3 of 39 steps (8%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:09 2021]
+rule fastqc_trimmed:
+    input: trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001.fastq
+    output: fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html
+    jobid: 40
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001, read=1
+
+[Wed May 19 02:16:10 2021]
+Finished job 29.
+4 of 39 steps (10%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:10 2021]
+rule fastqc_trimmed:
+    input: trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001.fastq
+    output: fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html
+    jobid: 31
+    wildcards: sample=KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001, read=1
+
+[Wed May 19 02:16:18 2021]
+Finished job 31.
+5 of 39 steps (13%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:18 2021]
+rule trimm:
+    input: data/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001.fastq, data/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001.fastq
+    output: trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001.fastq, trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001.fastq
+    jobid: 26
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001
+
+[Wed May 19 02:16:18 2021]
+Finished job 40.
+6 of 39 steps (15%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:18 2021]
+rule trimm:
+    input: data/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001.fastq, data/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001.fastq
+    output: trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001.fastq, trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001.fastq
+    jobid: 35
+    wildcards: sample=KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001
+
+[Wed May 19 02:16:22 2021]
+Finished job 26.
+7 of 39 steps (18%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:22 2021]
+rule fastqc_trimmed:
+    input: trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001.fastq
+    output: fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html
+    jobid: 27
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001, read=2
+
+[Wed May 19 02:16:23 2021]
+Finished job 35.
+8 of 39 steps (21%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:23 2021]
+rule fastqc_trimmed:
+    input: trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001.fastq
+    output: fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html
+    jobid: 36
+    wildcards: sample=KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001, read=2
+
+[Wed May 19 02:16:30 2021]
+Finished job 27.
+9 of 39 steps (23%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:30 2021]
+rule fastqc:
+    input: data/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001.fastq
+    output: fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html
+    jobid: 10
+    wildcards: sample=KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001, read=1
+
+[Wed May 19 02:16:31 2021]
+Finished job 36.
+10 of 39 steps (26%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:31 2021]
+rule fastqc:
+    input: data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001.fastq
+    output: fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+    jobid: 17
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001, read=2
+
+[Wed May 19 02:16:37 2021]
+Finished job 10.
+11 of 39 steps (28%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:37 2021]
+rule fastqc:
+    input: data/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001.fastq
+    output: fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html
+    jobid: 2
+    wildcards: sample=Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001, read=1
+
+[Wed May 19 02:16:39 2021]
+Finished job 17.
+12 of 39 steps (31%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:39 2021]
+rule trimm:
+    input: data/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001.fastq, data/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001.fastq
+    output: trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001.fastq, trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001.fastq
+    jobid: 23
+    wildcards: sample=Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001
+
+[Wed May 19 02:16:42 2021]
+Finished job 23.
+13 of 39 steps (33%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:42 2021]
+rule fastqc_trimmed:
+    input: trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001.fastq
+    output: fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html
+    jobid: 22
+    wildcards: sample=Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001, read=1
+
+[Wed May 19 02:16:44 2021]
+Finished job 2.
+14 of 39 steps (36%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:44 2021]
+rule fastqc:
+    input: data/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001.fastq
+    output: fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html
+    jobid: 11
+    wildcards: sample=KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001, read=2
+
+[Wed May 19 02:16:50 2021]
+Finished job 22.
+15 of 39 steps (38%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:50 2021]
+rule fastqc:
+    input: data/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001.fastq
+    output: fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html
+    jobid: 12
+    wildcards: sample=KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001, read=1
+
+[Wed May 19 02:16:51 2021]
+Finished job 11.
+16 of 39 steps (41%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:51 2021]
+rule fastqc_trimmed:
+    input: trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001.fastq
+    output: fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+    jobid: 42
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001, read=2
+
+[Wed May 19 02:16:56 2021]
+Finished job 12.
+17 of 39 steps (44%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:56 2021]
+rule fastqc:
+    input: data/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001.fastq
+    output: fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html
+    jobid: 8
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001, read=1
+
+[Wed May 19 02:16:59 2021]
+Finished job 42.
+18 of 39 steps (46%) done
+Select jobs to execute...
+
+[Wed May 19 02:16:59 2021]
+rule fastqc_trimmed:
+    input: trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001.fastq
+    output: fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html
+    jobid: 25
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001, read=1
+
+[Wed May 19 02:17:04 2021]
+Finished job 8.
+19 of 39 steps (49%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:04 2021]
+rule fastqc:
+    input: data/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001.fastq
+    output: fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html
+    jobid: 5
+    wildcards: sample=Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001, read=2
+
+[Wed May 19 02:17:07 2021]
+Finished job 25.
+20 of 39 steps (51%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:07 2021]
+rule fastqc:
+    input: data/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001.fastq
+    output: fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html
+    jobid: 13
+    wildcards: sample=KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001, read=2
+
+[Wed May 19 02:17:10 2021]
+Finished job 5.
+21 of 39 steps (54%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:10 2021]
+rule fastqc:
+    input: data/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001.fastq
+    output: fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html
+    jobid: 7
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001, read=2
+
+[Wed May 19 02:17:15 2021]
+Finished job 13.
+22 of 39 steps (56%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:15 2021]
+rule fastqc_trimmed:
+    input: trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001.fastq
+    output: fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+    jobid: 39
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001, read=2
+
+[Wed May 19 02:17:18 2021]
+Finished job 7.
+23 of 39 steps (59%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:18 2021]
+rule fastqc_trimmed:
+    input: trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001.fastq
+    output: fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html
+    jobid: 30
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001, read=2
+
+[Wed May 19 02:17:23 2021]
+Finished job 39.
+24 of 39 steps (62%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:23 2021]
+rule fastqc_trimmed:
+    input: trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001.fastq
+    output: fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html
+    jobid: 34
+    wildcards: sample=KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001, read=1
+
+[Wed May 19 02:17:27 2021]
+Finished job 30.
+25 of 39 steps (64%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:27 2021]
+rule trimm:
+    input: data/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001.fastq, data/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001.fastq
+    output: trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001.fastq, trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001.fastq
+    jobid: 20
+    wildcards: sample=Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001
+
+[Wed May 19 02:17:30 2021]
+Finished job 20.
+26 of 39 steps (67%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:30 2021]
+rule fastqc_trimmed:
+    input: trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001.fastq
+    output: fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html
+    jobid: 21
+    wildcards: sample=Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001, read=2
+
+[Wed May 19 02:17:32 2021]
+Finished job 34.
+27 of 39 steps (69%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:32 2021]
+rule fastqc:
+    input: data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001.fastq
+    output: fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html
+    jobid: 14
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001, read=1
+
+[Wed May 19 02:17:36 2021]
+Finished job 21.
+28 of 39 steps (72%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:36 2021]
+rule fastqc:
+    input: data/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001.fastq
+    output: fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html
+    jobid: 6
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001, read=1
+
+[Wed May 19 02:17:40 2021]
+Finished job 14.
+29 of 39 steps (74%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:40 2021]
+rule fastqc_trimmed:
+    input: trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001.fastq
+    output: fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html
+    jobid: 24
+    wildcards: sample=Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001, read=2
+
+[Wed May 19 02:17:44 2021]
+Finished job 6.
+30 of 39 steps (77%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:44 2021]
+rule fastqc_trimmed:
+    input: trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001.fastq
+    output: fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html
+    jobid: 37
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001, read=1
+
+[Wed May 19 02:17:47 2021]
+Finished job 24.
+31 of 39 steps (79%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:47 2021]
+rule fastqc_trimmed:
+    input: trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001.fastq
+    output: fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html
+    jobid: 19
+    wildcards: sample=Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001, read=1
+
+[Wed May 19 02:17:52 2021]
+Finished job 37.
+32 of 39 steps (82%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:52 2021]
+rule fastqc_trimmed:
+    input: trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001.fastq
+    output: fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html
+    jobid: 28
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001, read=1
+
+[Wed May 19 02:17:54 2021]
+Finished job 19.
+33 of 39 steps (85%) done
+Select jobs to execute...
+
+[Wed May 19 02:17:54 2021]
+rule fastqc_trimmed:
+    input: trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001.fastq
+    output: fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html
+    jobid: 33
+    wildcards: sample=KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001, read=2
+
+[Wed May 19 02:18:00 2021]
+Finished job 28.
+34 of 39 steps (87%) done
+Select jobs to execute...
+
+[Wed May 19 02:18:00 2021]
+rule fastqc:
+    input: data/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001.fastq
+    output: fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html
+    jobid: 4
+    wildcards: sample=Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001, read=1
+
+[Wed May 19 02:18:02 2021]
+Finished job 33.
+35 of 39 steps (90%) done
+Select jobs to execute...
+
+[Wed May 19 02:18:02 2021]
+rule multiqc_trimmed:
+    input: fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+    output: multiqc/trimmed/multiqc_report.html
+    jobid: 18
+
+[Wed May 19 02:18:02 2021]
+Error in rule multiqc_trimmed:
+    jobid: 18
+    output: multiqc/trimmed/multiqc_report.html
+    shell:
+        multiqc fastqc/trimmed -o multiqc/trimmed
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed May 19 02:18:05 2021]
+Finished job 4.
+36 of 39 steps (92%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/julija/snakemake-2/.snakemake/log/2021-05-19T021558.803938.snakemake.log

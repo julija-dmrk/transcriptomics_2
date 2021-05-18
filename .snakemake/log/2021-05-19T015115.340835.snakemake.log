@@ -1,0 +1,80 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	8	bbduk
+	16	fastqc
+	16	fastqc_trimmed
+	1	multiqc
+	1	multiqc_trimmed
+	43
+Select jobs to execute...
+
+[Wed May 19 01:51:16 2021]
+rule fastqc:
+    input: data/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001.fastq
+    output: fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html
+    jobid: 9
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001, read=2
+
+
+[Wed May 19 01:51:16 2021]
+rule fastqc:
+    input: data/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001.fastq
+    output: fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html
+    jobid: 3
+    wildcards: sample=Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001, read=2
+
+[Wed May 19 01:51:23 2021]
+Finished job 3.
+1 of 43 steps (2%) done
+Select jobs to execute...
+
+[Wed May 19 01:51:23 2021]
+rule fastqc:
+    input: data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001.fastq
+    output: fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+    jobid: 15
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001, read=2
+
+[Wed May 19 01:51:25 2021]
+Finished job 9.
+2 of 43 steps (5%) done
+Select jobs to execute...
+
+[Wed May 19 01:51:26 2021]
+rule fastqc:
+    input: data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001.fastq
+    output: fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html
+    jobid: 16
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001, read=1
+
+[Wed May 19 01:51:33 2021]
+Finished job 15.
+3 of 43 steps (7%) done
+Select jobs to execute...
+
+[Wed May 19 01:51:33 2021]
+rule bbduk:
+    input: data/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001.fastq, data/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001.fastq
+    output: trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001.fastq, trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001.fastq
+    jobid: 26
+    wildcards: sample=Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001
+
+[Wed May 19 01:51:33 2021]
+Error in rule bbduk:
+    jobid: 26
+    output: trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001.fastq, trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001.fastq
+    shell:
+        scripts/bbmap/bbduk.sh in1=data/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001.fastq out1=trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001.fastq in2=data/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001.fastq out2=trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001.fastq ref=adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=r trimq=10
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed May 19 01:51:34 2021]
+Finished job 16.
+4 of 43 steps (9%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/julija/snakemake-2/.snakemake/log/2021-05-19T015115.340835.snakemake.log

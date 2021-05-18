@@ -1,0 +1,3 @@
+NameError in line 6 of /home/julija/snakemake-2/Snakefile:
+name 'reads' is not defined
+  File "/home/julija/snakemake-2/Snakefile", line 6, in <module>

@@ -1,0 +1,7 @@
+Building DAG of jobs...
+WorkflowError:
+MissingInputException: Missing input files for rule fastqc:
+data/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001.fastq.gz
+MissingInputException: Missing input files for rule bbduk:
+data/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001.fastq
+data/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001.fastq

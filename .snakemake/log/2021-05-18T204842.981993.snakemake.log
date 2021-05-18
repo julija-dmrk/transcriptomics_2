@@ -1,0 +1,19 @@
+Building DAG of jobs...
+MissingInputException in line 28 of /home/julija/snakemake-2/Snakefile:
+Missing input files for rule multiqc:
+fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html
+fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html
+fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html
+fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html
+fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html
+fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html
+fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html
+fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html
+fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html
+fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html
+fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html
+fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html
+fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html
+fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html

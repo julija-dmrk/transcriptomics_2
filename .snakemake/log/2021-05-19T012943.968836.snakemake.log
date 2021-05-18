@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 17 of /home/julija/snakemake-2/Snakefile:
+Missing input files for rule fastqc:
+data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001.fastq

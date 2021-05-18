@@ -1,0 +1,3 @@
+KeyError in line 6 of /home/julija/snakemake-2/Snakefile:
+'samples'
+  File "/home/julija/snakemake-2/Snakefile", line 6, in <module>

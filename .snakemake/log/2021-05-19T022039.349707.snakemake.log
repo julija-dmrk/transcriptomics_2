@@ -1,0 +1,42 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 3
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	multiqc
+	1	multiqc_trimmed
+	3
+Select jobs to execute...
+
+[Wed May 19 02:20:40 2021]
+rule multiqc_trimmed:
+    input: fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html, fastqc/trimmed/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html, fastqc/trimmed/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+    output: multiqc/trimmed/multiqc_report.html
+    jobid: 18
+
+
+[Wed May 19 02:20:40 2021]
+rule multiqc:
+    input: fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html, fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html, fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html, fastqc/Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html, fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html, fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html, fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html, fastqc/Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html, fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html, fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html, fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html, fastqc/KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html, fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html, fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html, fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html, fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+    output: multiqc/multiqc_report.html
+    jobid: 1
+
+[Wed May 19 02:20:49 2021]
+Finished job 18.
+1 of 3 steps (33%) done
+[Wed May 19 02:20:50 2021]
+Finished job 1.
+2 of 3 steps (67%) done
+Select jobs to execute...
+
+[Wed May 19 02:20:50 2021]
+localrule all:
+    input: multiqc/multiqc_report.html, multiqc/trimmed/multiqc_report.html
+    jobid: 0
+
+[Wed May 19 02:20:50 2021]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /home/julija/snakemake-2/.snakemake/log/2021-05-19T022039.349707.snakemake.log

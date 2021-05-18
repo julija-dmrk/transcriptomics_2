@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 28 of /home/julija/snakemake-2/Snakefile:
+Missing input files for rule fastqc:
+data/Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001.fastq

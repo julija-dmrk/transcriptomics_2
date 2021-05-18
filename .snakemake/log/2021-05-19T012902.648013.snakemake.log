@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	8	bbduk
+	16	fastqc
+	16	fastqc_trimmed
+	1	multiqc
+	1	multiqc_trimmed
+	43
+Select jobs to execute...
+
+[Wed May 19 01:29:03 2021]
+rule fastqc:
+    input: data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001.fastq
+    output: fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+    jobid: 15
+    wildcards: sample=KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001, read=2
+
+[Wed May 19 01:29:03 2021]
+Error in rule fastqc:
+    jobid: 15
+    output: fastqc/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+    shell:
+        fastqc data/KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001.fastq -outdir=fastqc
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/julija/snakemake-2/.snakemake/log/2021-05-19T012902.648013.snakemake.log
