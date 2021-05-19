@@ -1,0 +1,233 @@
+[2021-05-19 02:20:41,185] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/julija/mambaforge/envs/snakemake-tutorial/lib/python3.8/site-packages/multiqc_config.yaml
+[2021-05-19 02:20:41,185] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/julija/.multiqc_config.yaml
+[2021-05-19 02:20:41,185] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2021-05-19 02:20:41,185] multiqc                                            [DEBUG  ]  Command used: /home/julija/mambaforge/envs/snakemake-tutorial/bin/multiqc fastqc/trimmed -o multiqc/trimmed
+[2021-05-19 02:20:43,827] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.10.1
+[2021-05-19 02:20:43,827] multiqc                                            [INFO   ]  This is MultiQC v1.10.1
+[2021-05-19 02:20:43,827] multiqc                                            [DEBUG  ]  Command     : /home/julija/mambaforge/envs/snakemake-tutorial/bin/multiqc fastqc/trimmed -o multiqc/trimmed
+[2021-05-19 02:20:43,827] multiqc                                            [DEBUG  ]  Working dir : /home/julija/snakemake-2
+[2021-05-19 02:20:43,827] multiqc                                            [INFO   ]  Template    : default
+[2021-05-19 02:20:43,827] multiqc                                            [DEBUG  ]  Running Python 3.8.5 | packaged by conda-forge | (default, Jul 31 2020, 02:25:52)  [GCC 7.5.0]
+[2021-05-19 02:20:43,827] multiqc                                            [INFO   ]  Searching   : /home/julija/snakemake-2/fastqc/trimmed
+[2021-05-19 02:20:43,828] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, ngsderive, purple, conpair, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, goleft_indexcov, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dedup, damageprofiler, biobambam2, jcvi, mtnucratio, picard, sentieon, prokka, qc3C, samblaster, samtools, sexdeterrmine, eigenstratdatabasetools, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, bbmap, bismark, biscuit, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, snpsplit, kat, leehom, adapterRemoval, clipandmerge, cutadapt, flexbar, kaiju, kraken, malt, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, pychopper, pycoqc, minionqc, multivcfanalyzer, clusterflow, bcl2fastq, interop, ivar, flash, seqyclean, optitype
+[2021-05-19 02:20:43,828] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmphrhai9xl
+[2021-05-19 02:20:43,980] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html
+[2021-05-19 02:20:43,983] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html
+[2021-05-19 02:20:43,983] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html
+[2021-05-19 02:20:43,983] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html
+[2021-05-19 02:20:43,983] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html
+[2021-05-19 02:20:43,983] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html
+[2021-05-19 02:20:43,984] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,049] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,051] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,051] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,051] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,052] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,052] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,052] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,107] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,109] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,109] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,110] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,110] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,110] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,110] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,175] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,177] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,177] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,177] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,178] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,178] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,178] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,231] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,233] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,233] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,234] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,234] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,234] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,234] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,306] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,308] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,308] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,308] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,309] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,309] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,309] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,376] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,379] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,379] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,379] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,379] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,380] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,380] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,434] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,436] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,436] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,436] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,436] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,436] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,436] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,497] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,499] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,499] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,499] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,499] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,499] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,499] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-2_S7_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,551] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,553] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,554] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,554] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,554] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,554] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,554] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-3_S4_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,616] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,618] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,618] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,618] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,618] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,618] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,618] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-3_S6_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,677] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,680] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,680] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,680] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,680] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,680] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,680] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-2_S1_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,734] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,736] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,736] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,736] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,736] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,736] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,737] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-UHRR-KAPA-100_ng_total_RNA-3_S8_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,796] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,798] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,799] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,799] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,799] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,799] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,799] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: KAPA_mRNA_HyperPrep_-HBR-KAPA-100_ng_total_RNA-2_S5_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,853] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,855] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,855] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,855] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,855] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,855] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,855] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: Collibri_standard_protocol-UHRR-Collibri-100_ng-2_S3_L001_R1_001_fastqc.html
+[2021-05-19 02:20:44,916] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,919] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,919] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,919] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,919] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,919] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html
+[2021-05-19 02:20:44,919] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: Collibri_standard_protocol-HBR-Collibri-100_ng-3_S2_L001_R2_001_fastqc.html
+[2021-05-19 02:20:45,403] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.3.4
+[2021-05-19 02:20:45,404] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.3.4
+[2021-05-19 02:20:45,405] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2021-05-19 02:20:45,411] multiqc                                            [DEBUG  ]  No samples found: ngsderive
+[2021-05-19 02:20:45,416] multiqc                                            [DEBUG  ]  No samples found: purple
+[2021-05-19 02:20:45,421] multiqc                                            [DEBUG  ]  No samples found: conpair
+[2021-05-19 02:20:45,426] multiqc                                            [DEBUG  ]  No samples found: peddy
+[2021-05-19 02:20:45,431] multiqc                                            [DEBUG  ]  No samples found: somalier
+[2021-05-19 02:20:45,436] multiqc                                            [DEBUG  ]  No samples found: methylQA
+[2021-05-19 02:20:45,442] multiqc                                            [DEBUG  ]  No samples found: mosdepth
+[2021-05-19 02:20:45,447] multiqc                                            [DEBUG  ]  No samples found: phantompeakqualtools
+[2021-05-19 02:20:45,452] multiqc                                            [DEBUG  ]  No samples found: qualimap
+[2021-05-19 02:20:45,458] multiqc                                            [DEBUG  ]  No samples found: preseq
+[2021-05-19 02:20:45,463] multiqc                                            [DEBUG  ]  No samples found: quast
+[2021-05-19 02:20:45,468] multiqc                                            [DEBUG  ]  No samples found: qorts
+[2021-05-19 02:20:45,473] multiqc                                            [DEBUG  ]  No samples found: rna_seqc
+[2021-05-19 02:20:45,478] multiqc                                            [DEBUG  ]  No samples found: rockhopper
+[2021-05-19 02:20:45,483] multiqc                                            [DEBUG  ]  No samples found: rsem
+[2021-05-19 02:20:45,490] multiqc                                            [DEBUG  ]  No samples found: rseqc
+[2021-05-19 02:20:45,495] multiqc                                            [DEBUG  ]  No samples found: busco
+[2021-05-19 02:20:45,499] multiqc                                            [DEBUG  ]  No samples found: goleft_indexcov
+[2021-05-19 02:20:45,505] multiqc                                            [DEBUG  ]  No samples found: disambiguate
+[2021-05-19 02:20:45,510] multiqc                                            [DEBUG  ]  No samples found: supernova
+[2021-05-19 02:20:45,517] multiqc                                            [DEBUG  ]  No samples found: deeptools
+[2021-05-19 02:20:45,522] multiqc                                            [DEBUG  ]  No samples found: sargasso
+[2021-05-19 02:20:45,527] multiqc                                            [DEBUG  ]  No samples found: verifybamid
+[2021-05-19 02:20:45,532] multiqc                                            [DEBUG  ]  No samples found: mirtrace
+[2021-05-19 02:20:45,537] multiqc                                            [DEBUG  ]  No samples found: happy
+[2021-05-19 02:20:45,542] multiqc                                            [DEBUG  ]  No samples found: mirtop
+[2021-05-19 02:20:45,548] multiqc                                            [DEBUG  ]  No samples found: homer
+[2021-05-19 02:20:45,553] multiqc                                            [DEBUG  ]  No samples found: hops
+[2021-05-19 02:20:45,558] multiqc                                            [DEBUG  ]  No samples found: macs2
+[2021-05-19 02:20:45,563] multiqc                                            [DEBUG  ]  No samples found: theta2
+[2021-05-19 02:20:45,569] multiqc                                            [DEBUG  ]  No samples found: snpeff
+[2021-05-19 02:20:45,574] multiqc                                            [DEBUG  ]  No samples found: gatk
+[2021-05-19 02:20:45,579] multiqc                                            [DEBUG  ]  No samples found: htseq
+[2021-05-19 02:20:45,585] multiqc                                            [DEBUG  ]  No samples found: bcftools
+[2021-05-19 02:20:45,590] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2021-05-19 02:20:45,597] multiqc                                            [DEBUG  ]  No samples found: fgbio
+[2021-05-19 02:20:45,605] multiqc                                            [DEBUG  ]  No samples found: dragen
+[2021-05-19 02:20:45,610] multiqc                                            [DEBUG  ]  No samples found: dedup
+[2021-05-19 02:20:45,616] multiqc                                            [DEBUG  ]  No samples found: damageprofiler
+[2021-05-19 02:20:45,627] multiqc                                            [DEBUG  ]  No samples found: biobambam2
+[2021-05-19 02:20:45,632] multiqc                                            [DEBUG  ]  No samples found: jcvi
+[2021-05-19 02:20:45,638] multiqc                                            [DEBUG  ]  No samples found: mtnucratio
+[2021-05-19 02:20:45,642] multiqc                                            [DEBUG  ]  No samples found: picard
+[2021-05-19 02:20:45,647] multiqc                                            [DEBUG  ]  No samples found: sentieon
+[2021-05-19 02:20:45,652] multiqc                                            [DEBUG  ]  No samples found: prokka
+[2021-05-19 02:20:45,657] multiqc                                            [DEBUG  ]  No samples found: qc3C
+[2021-05-19 02:20:45,663] multiqc                                            [DEBUG  ]  No samples found: samblaster
+[2021-05-19 02:20:45,669] multiqc                                            [DEBUG  ]  No samples found: samtools
+[2021-05-19 02:20:45,674] multiqc                                            [DEBUG  ]  No samples found: sexdeterrmine
+[2021-05-19 02:20:45,679] multiqc                                            [DEBUG  ]  No samples found: eigenstratdatabasetools
+[2021-05-19 02:20:45,685] multiqc                                            [DEBUG  ]  No samples found: bamtools
+[2021-05-19 02:20:45,690] multiqc                                            [DEBUG  ]  No samples found: jellyfish
+[2021-05-19 02:20:45,695] multiqc                                            [DEBUG  ]  No samples found: vcftools
+[2021-05-19 02:20:45,700] multiqc                                            [DEBUG  ]  No samples found: longranger
+[2021-05-19 02:20:45,706] multiqc                                            [DEBUG  ]  No samples found: stacks
+[2021-05-19 02:20:45,712] multiqc                                            [DEBUG  ]  No samples found: varscan2
+[2021-05-19 02:20:45,720] multiqc                                            [DEBUG  ]  No samples found: bbmap
+[2021-05-19 02:20:45,725] multiqc                                            [DEBUG  ]  No samples found: bismark
+[2021-05-19 02:20:45,730] multiqc                                            [DEBUG  ]  No samples found: biscuit
+[2021-05-19 02:20:45,735] multiqc                                            [DEBUG  ]  No samples found: hicexplorer
+[2021-05-19 02:20:45,740] multiqc                                            [DEBUG  ]  No samples found: hicup
+[2021-05-19 02:20:45,745] multiqc                                            [DEBUG  ]  No samples found: hicpro
+[2021-05-19 02:20:45,751] multiqc                                            [DEBUG  ]  No samples found: salmon
+[2021-05-19 02:20:45,755] multiqc                                            [DEBUG  ]  No samples found: kallisto
+[2021-05-19 02:20:45,760] multiqc                                            [DEBUG  ]  No samples found: slamdunk
+[2021-05-19 02:20:45,766] multiqc                                            [DEBUG  ]  No samples found: star
+[2021-05-19 02:20:45,771] multiqc                                            [DEBUG  ]  No samples found: hisat2
+[2021-05-19 02:20:45,776] multiqc                                            [DEBUG  ]  No samples found: tophat
+[2021-05-19 02:20:45,781] multiqc                                            [DEBUG  ]  No samples found: bowtie2
+[2021-05-19 02:20:45,786] multiqc                                            [DEBUG  ]  No samples found: bowtie1
+[2021-05-19 02:20:45,791] multiqc                                            [DEBUG  ]  No samples found: snpsplit
+[2021-05-19 02:20:45,796] multiqc                                            [DEBUG  ]  No samples found: kat
+[2021-05-19 02:20:45,801] multiqc                                            [DEBUG  ]  No samples found: leehom
+[2021-05-19 02:20:45,806] multiqc                                            [DEBUG  ]  No samples found: adapterRemoval
+[2021-05-19 02:20:45,811] multiqc                                            [DEBUG  ]  No samples found: clipandmerge
+[2021-05-19 02:20:45,816] multiqc                                            [DEBUG  ]  No samples found: cutadapt
+[2021-05-19 02:20:45,822] multiqc                                            [DEBUG  ]  No samples found: flexbar
+[2021-05-19 02:20:45,827] multiqc                                            [DEBUG  ]  No samples found: kaiju
+[2021-05-19 02:20:45,832] multiqc                                            [DEBUG  ]  No samples found: kraken
+[2021-05-19 02:20:45,837] multiqc                                            [DEBUG  ]  No samples found: malt
+[2021-05-19 02:20:45,842] multiqc                                            [DEBUG  ]  No samples found: trimmomatic
+[2021-05-19 02:20:45,846] multiqc                                            [DEBUG  ]  No samples found: sickle
+[2021-05-19 02:20:45,851] multiqc                                            [DEBUG  ]  No samples found: skewer
+[2021-05-19 02:20:45,857] multiqc                                            [DEBUG  ]  No samples found: sortmerna
+[2021-05-19 02:20:45,861] multiqc                                            [DEBUG  ]  No samples found: biobloomtools
+[2021-05-19 02:20:45,866] multiqc                                            [DEBUG  ]  No samples found: fastq_screen
+[2021-05-19 02:20:45,871] multiqc                                            [DEBUG  ]  No samples found: afterqc
+[2021-05-19 02:20:45,877] multiqc                                            [DEBUG  ]  No samples found: fastp
+[2021-05-19 02:20:48,235] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 16 reports
+[2021-05-19 02:20:48,486] multiqc                                            [DEBUG  ]  No samples found: pychopper
+[2021-05-19 02:20:48,491] multiqc                                            [DEBUG  ]  No samples found: pycoqc
+[2021-05-19 02:20:48,495] multiqc                                            [DEBUG  ]  No samples found: minionqc
+[2021-05-19 02:20:48,500] multiqc                                            [DEBUG  ]  No samples found: multivcfanalyzer
+[2021-05-19 02:20:48,506] multiqc                                            [DEBUG  ]  No samples found: clusterflow
+[2021-05-19 02:20:48,511] multiqc                                            [DEBUG  ]  No samples found: bcl2fastq
+[2021-05-19 02:20:48,516] multiqc                                            [DEBUG  ]  No samples found: interop
+[2021-05-19 02:20:48,521] multiqc                                            [DEBUG  ]  No samples found: ivar
+[2021-05-19 02:20:48,526] multiqc                                            [DEBUG  ]  No samples found: flash
+[2021-05-19 02:20:48,531] multiqc                                            [DEBUG  ]  No samples found: seqyclean
+[2021-05-19 02:20:48,536] multiqc                                            [DEBUG  ]  No samples found: optitype
+[2021-05-19 02:20:48,563] multiqc                                            [INFO   ]  Compressing plot data
+[2021-05-19 02:20:48,829] multiqc                                            [INFO   ]  Report      : multiqc/trimmed/multiqc_report.html
+[2021-05-19 02:20:48,829] multiqc                                            [INFO   ]  Data        : multiqc/trimmed/multiqc_data
+[2021-05-19 02:20:48,830] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmphrhai9xl/multiqc_data' to 'multiqc/trimmed/multiqc_data'
+[2021-05-19 02:20:48,960] multiqc                                            [INFO   ]  MultiQC complete
