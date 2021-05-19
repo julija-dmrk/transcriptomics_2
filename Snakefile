@@ -16,8 +16,14 @@ deseq_d= 'deseq'
 rule all:
     input:
         os.path.join(multiqc_dir, 'multiqc_report.html'),
-        os.path.join(multiqc_dir, trimmed_dir, 'multiqc_report.html')   
-                
+        os.path.join(multiqc_dir, trimmed_dir, 'multiqc_report.html'),
+        os.path.join(idx_g, 'genomeParameters.txt'),
+        os.path.join(idx_g, 'Genome'),
+        expand(os.path.join(align_out, '{sample}', 'Aligned.sortedByCoord.out.bam'), sample=config['samples']),
+        expand(os.path.join(sam_d, '{sample}.bam'), sample=config['samples']),
+        os.path.join(fcounts_d, 'fcount_result.txt'),   
+        expand(os.path.join(deseq_d, '{prep}_DE_volcano.pdf'), prep=config['prep']),
+        expand(os.path.join(deseq_d, '{prep}_DE_results.csv'), prep=config['prep'])        
 rule fastqc:
     input:
        os.path.join(data_d, '{sample}_R{read}_001.fastq')
@@ -105,3 +111,14 @@ rule f_counts:
     shell:
         "featureCounts {input} -p -t exon -g gene_id -a {star_d}/chr19_20Mb.gtf -o {output} -s 1"
 
+rule deseq:
+    input:
+        os.path.join(fcounts_d, 'fcount_result.txt'),
+    params:
+        deseq_d,
+        config['prep']
+    output:
+        os.path.join(deseq_d, '{prep}_DE_volcano.pdf'),
+        os.path.join(deseq_d, '{prep}_DE_results.csv')
+    script:
+        "deseq2.R"
