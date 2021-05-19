@@ -1,5 +1,12 @@
 data/
+stardata/
 fastqc/
 multiqc/
 trimmed/
+idx_genome/
+sam_sorted/
+aligned/
+fcounts/
+deseq/
+.snakemake
 
